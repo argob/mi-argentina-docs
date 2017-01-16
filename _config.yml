@@ -14,7 +14,7 @@ baseurl: "/mi-argentina" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 source: src
-destination: dist
+# destination: dist
 
 # Build settings
 markdown: kramdown
