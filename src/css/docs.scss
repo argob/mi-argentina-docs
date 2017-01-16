@@ -12,5 +12,165 @@ exclude: true
 
 /* Resources */
 
-@import "variables.scss";
-@import "docs.scss";
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$white:                  #fff !default;
+$black:                  #111 !default;
+$gray-base:              #111 !default;
+
+$gray:                   #767676;
+$gray-dark:              #444;
+$gray-border:            #ccc;
+$gray-hover:             #e5e5e5;
+$gray-background:        #f5f5f5;
+$gray-light:             #ccc;
+$gray-lighter:           #e5e5e5;
+
+$brand-default:         #838383 !default;
+$brand-primary:         #0072bc !default;
+$brand-secondary:       #00b9f1 !default;
+$brand-complementary:   #fd4138 !default;
+$brand-success:         #46a948 !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #f5f5f5 !default;
+//** Global text color on `<body>`.
+$text-color:            $gray-base !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      lighten($link-color, 15%) !default;
+//** Link hover decoration.
+$link-visited: #705582 !default;
+
+$dark-opacity: rgba(0, 0, 0, .5);
+
+$shadow: 0 2px 2px rgba(0, 0, 0, .2);
+
+$font-family-serif: 'Droid Serif', serif;
+$font-family-sans-serif: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+
+.docs-examlpe {
+  margin: 60px 0;
+  .docs-content {
+    padding: 30px;
+    border: 4px solid $gray-lighter;
+    border-radius: 8px 8px 0 0;
+  }
+  .docs-code {
+    padding: 15px 30px;
+    background: $gray-lighter;
+    border: none;
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+.docs-colores {
+  margin: 30px 0 10px;
+
+  span {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    padding-top: 45px;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    border-radius: 110px;
+  }
+}
+
+.docs-container {
+  
+}
+
+
+/* colores */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #ededed !important;
+}
+
+.docs-colores {
+  float: left;
+
+  span {
+    color: #fff;
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    width: 110px;
+    height: 110px;
+    border-radius: 110px;
+    padding-top: 45px;
+    display: block;
+    float: left;
+    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+}
+
+pre[class*="language-"] {
+  padding: 2em !important;
+}
+
+#docs {
+  padding: 30px 0 60px;
+
+  .docs-container {
+
+    >h1, > h2, > h3, > h4, > h5, > h6 {
+      margin-top: 2em;
+    }
+
+    >h1 {
+      font-size: 2.4rem;
+    }
+    > h2 {
+      font-size: 2rem;
+    }
+    > h3 {
+      font-size: 1.6rem;
+    }
+    > h4 {
+      font-size: 1.4rem;
+    }
+    > h5 {
+      font-size: 1.3rem;
+    }
+    > h6 {
+      font-size: 1.2rem;
+    }
+
+    p, ul > li, ol > li {
+      margin-bottom: 1em;
+    }
+
+    hr {
+      margin: 60px 0 60px
+    }
+
+    img {
+      max-width: 100%;
+      margin: 30px 0;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    pre.highlight {
+      margin: 30px 0;
+    }
+  }
+}
