@@ -1,0 +1,54 @@
+<!-- <nav class="p-r-4">
+  <h3 class="m-t-0 text-gray">Contenidos</h3>
+  <ul class="nav nav-pills nav-stacked">
+    {% if site.pages %}
+
+      {% assign navigation = site.html_pages | sort: 'order' %}
+
+      {% for element in navigation %}
+        {% unless element.exclude == true %}
+
+          {% assign current = nil %}
+          {% if page.url == element.url %}
+            {% assign current = 'active' %}
+          {% endif %}
+
+          <li class="{{ current }}"><a href="{{ element.url | prepend: site.baseurl }}">{{ element.title }}</a></li>
+        {% endunless %}
+      {% endfor %}
+
+    {% endif %}
+  </ul>
+</nav> -->
+
+
+<nav class="p-r-4">
+  <ul class="nav nav-pills nav-stacked">
+
+    {% for element in site.data.navigation %}
+
+      {% unless element.hr == true %}
+
+        {% assign current = nil %}
+        {% if page.url == element.url %}
+          {% assign current = 'active' %}
+        {% endif %}
+
+        {% assign highlighted = nil %}
+        {% if element.highlighted %}
+          {% assign highlighted = 'btn-title' %}
+        {% endif %}
+
+        <li class="{{ current }} {{ highlighted }}">
+          <a href="{{ element.url | prepend: site.baseurl }}">{{ element.title }}</a>
+        </li>
+
+      {% else %}
+
+        <hr>
+
+      {% endunless %}
+    {% endfor %}
+
+  </ul>
+</nav>

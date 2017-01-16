@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<!--
+                             MMMMMM    MMMMMM
+                        MMMMMMMMMMMMMMMMMMMMMMMM
+                    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                MM  MM      MM..        MM..      MM  MM
+                MM  MM      MMMM        MMMM      MM  MM
+                MM  MM                            MM  MM
+                MM  MM    MMMMMMMMMMMMMMMMMMMM    MM  MM
+              MMMM  MM    MM                MM    MM  MMMM
+              MM      MMMM    MMMMMMMMMMMM    MMMM      MM
+              MM    MM  MM  MM            MM  MM  MM    MM
+              MM    MM  MMMM                MMMM  MM    MM
+              MMMM  MM    MM                MM    MM  MMMM
+                    MM                            MM
+                    MMMMMM                    MMMMMM
+                  MMMMMMMM      MMMMMMMM      MMMMMMMM
+                MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+              MMMMMMMMMMMMMMMMMMMM    MMMMMMMMMMMMMMMMMMMM
+            MMMMMMMMMMMMMMMMMMMMMM    MMMMMMMMMMMMMMMMMMMMMM
+          MMMMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMMMMM
+      MMMMMMMMMMMMMMMMMMMM        MMMM        MMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMM        MMMM        MMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMM        MMMMMMMMMMMM        MMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMM    MMMMMMMM    MMMMMMMM    MMMMMMMMMMMMMMMM  MM
+    MM  MMMMMMMMMMMMMM    MMMMMMMM    MMMMMMMM    MMMMMMMMMMMMMMMMMMMM
+  MM    MMMMMMMMMMMMMM        MMMMMMMMMMMM        MMMMMMMMMMMM  MM    MM
+  MMMMMMMM  MMMMMMMMMMMMMM        MMMM        MMMMMMMMMMMMMM    MM    MM
+MM    MM      MMMMMMMMMMMM        MMMM        MMMMMMMMMMMM      MM    MM
+MM    MM        MMMMMMMMMMMMMM            MMMMMMMMMMMMMM          MMMM
+MM    MM        MMMMMMMMMMMMMM            MMMMMMMMMMMMMM
+  MMMM          MM  MMMMMMMMMMMMMM    MMMMMMMMMMMMMM  MM
+              MM      MMMMMMMMMMMM    MMMMMMMMMMMM      MM
+              MM        MMMMMMMMMMMMMMMMMMMMMMMM        MM
+              MMMM        MMMMMMMMMMMMMMMMMMMM        MMMM
+                MMMMMMMM  MMMMMMMMMMMMMMMMMMMM  MMMMMMMM
+              MMMM    MMMM    MMMMMMMMMMMM    MMMM    MMMM
+              MMMM    MMMM      MMMMMMMM      MMMM    MMMM
+            MMMM      MMMM        MMMM        MMMM      MMMM
+            MM    MMMMMM                        MMMMMM    MM
+            MMMMMMMMMMMM                        MMMMMMMMMMMM
+
+
+Poncho te saluda, amigo del código!
+Si te interesa lo que hacemos, mandanos un email a nrougier@modernizacion.gob.ar =D
+-->
+
+  <html lang="es">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio de Sesión</title>
+  <meta name="description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina.">
+  <meta name="author" content="Presidencia de la Nación">
+  <link rel="shortcut icon" href="/mi-argentina/favicon.ico">
+
+  <!-- Nav and address bar color -->
+  <meta name="theme-color" content="#0072b8">
+  <meta name="msapplication-navbutton-color" content="#0072b8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0072b8">
+
+  <meta property="og:url" content="/mi-argentina/doc/iniciar-sesion.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Inicio de Sesión" />
+  <meta property="og:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta property="og:image" content="/ejemplos/img/jumbotron.jpg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Inicio de Sesión" />
+  <meta name="twitter:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta name="twitter:image" content="/ejemplos/img/jumbotron.jpg" />
+
+  <link href="/mi-argentina/node_modules/argob-poncho/dist/css/roboto-fontface.css" rel="stylesheet">
+  <!-- <link href="/mi-argentina/node_modules/argob-poncho/dist/css/droid-serif.css" rel="stylesheet"> -->
+  <link href="/mi-argentina/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="/mi-argentina/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="/mi-argentina/node_modules/argob-poncho/dist/css/poncho.css" rel="stylesheet">
+  <link href="/mi-argentina/css/docs.css" rel="stylesheet">
+  <!-- <link href="/mi-argentina/css/prism.css" rel="stylesheet"> -->
+</head>
+
+  <body data-spy="scroll" data-target="#navbar-docs">
+
+    <header>
+  <nav class="navbar navbar-top navbar-default" role="navigation">
+    <div class="container">
+      <div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/mi-argentina/" class="navbar-brand">
+            <!-- <img alt="Poncho" src="/mi-argentina/img/poncho.gif" height="50"> -->
+            <h1>Mi Argentina</h1>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/mi-argentina">Mi Argentina</a></li>
+            <li><a href="/poncho">Poncho</a></li>
+            <li><a href="/iconos">Íconos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <main id="docs" role="main">
+      <section id="docs">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <aside class="page-sidebar">
+                <!-- <nav class="p-r-4">
+  <h3 class="m-t-0 text-gray">Contenidos</h3>
+  <ul class="nav nav-pills nav-stacked">
+    
+
+      
+
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/token.html">Token de Acceso</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class="active"><a href="/mi-argentina/doc/iniciar-sesion.html">Inicio de Sesión</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/integracion.html">Integración con Mi Argentina</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/permisos.html">Permisos</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/plataformas.html">Plataformas disponibles</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/pruebas.html">Probar un proceso de inicio de sesión</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/seguridad.html">Seguridad del inicio de sesión</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/">Introducción</a></li>
+        
+      
+
+    
+  </ul>
+</nav> -->
+
+
+<nav class="p-r-4">
+  <ul class="nav nav-pills nav-stacked">
+
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" btn-title">
+          <a href="/mi-argentina/">Introducción</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/integracion.html">Integración con Mi Argentina</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/plataformas.html">Plataformas</a>
+        </li>
+
+      
+    
+
+      
+
+        <hr>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class="active ">
+          <a href="/mi-argentina/doc/iniciar-sesion.html">Inicio de Sesión</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/permisos.html">Permisos</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/token.html">Tokens de Acceso</a>
+        </li>
+
+      
+    
+
+  </ul>
+</nav>
+              </aside>
+            </div>
+            <div class="col-md-8 docs-container">
+              <h1 class="m-t-0">Inicio de Sesión</h1>
+              <hr class="m-t-0 m-b-3">
+
+              <p>Si la persona no inició sesión en <strong>Mi Argentina</strong>, se le pedirá que lo haga antes de pasar al inicio de sesión en la aplicación, si no está registrado podrá hacerlo y para luego continuar con el flujo.</p>
+
+<p>Esto se detecta automáticamente, de modo que no tienes que hacer nada para activar este comportamiento.</p>
+
+<h3 id="invocar-la-pantalla-de-inicio-de-sesin-y-configurar-la-url-de-redireccionamiento">Invocar la pantalla de inicio de sesión y configurar la URL de redireccionamiento</h3>
+
+<p>La aplicación debe iniciar el redireccionamiento a una URL que mostrará el cuadro de diálogo de inicio de sesión:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>https://id.argentina.gob.ar/authorize/
+    ?client_id={client-id}
+    &amp;redirect_uri={redirect-uri}
+    &amp;response_type=code
+    &amp;scope=openid+profile+email+optional
+</code></pre>
+</div>
+
+<p>Esta URL tiene los siguientes parámetros obligatorios:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">client_id</code>: el identificador de la aplicación.</li>
+  <li><code class="highlighter-rouge">redirect_uri</code>: la URL a la que quieres redirigir a la persona que inicia sesión. Esta URL captura la respuesta dada en la pantalla de inicio de sesión.</li>
+</ul>
+
+<h3 id="intercambiar-cdigo-por-un-token-de-acceso">Intercambiar código por un token de acceso</h3>
+
+<p>Como este proceso de redireccionamiento envía al navegador a direcciones URL de tu aplicación desde la pantalla de inicio de sesión, alguien podría acceder directamente a estas URL mediante fragmentos o parámetros falsos. Por tanto, la aplicación debe confirmar que la persona que usa la aplicación es la misma persona de la que tienes datos de respuesta antes de generar un token de acceso.</p>
+
+<p>Luego del primer paso, se recibe un parámetro <code class="highlighter-rouge">code</code> que hay que intercambiarlo por un token de acceso mediante un extremo. La llamada debe ser de servidor a servidor, ya que involucra la clave secreta de la aplicación (la clave secreta de la aplicación no debe aparecer nunca en el código del cliente).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>https://id.argentina.gob.ar/token/
+    ?client_id={client-id}
+    &amp;client_secret={client-secret}
+    &amp;redirect_uri={redirect-uri}
+    &amp;code={code}
+    &amp;grant_type=authorization_code
+</code></pre>
+</div>
+
+<p>Esta URL tiene los siguientes parámetros obligatorios:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">code</code>: el parámetro recibido del redireccionamiento desde la pantalla de inicio de sesión.</li>
+  <li><code class="highlighter-rouge">client_secret</code>: la clave secreta exclusiva de tu aplicación. Es extremadamente importante que permanezca en secreto, es el núcleo de la seguridad de la aplicación y de todas las personas que la usan.</li>
+</ul>
+
+<p>Una respuesta válida a esta petición contiene los siguientes campos en un objeto JSON:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">access_token</code></td>
+      <td>Token para acceder a las APIs.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">token_type</code></td>
+      <td>Identifica el tipo de token que se entrega. Debe ser igual a <code class="highlighter-rouge">Bearer</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">expires_in</code></td>
+      <td>El tiempo de expiración del token.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">refresh_token</code></td>
+      <td>Hash que se utiliza para obtener otro access_token cuando se vence.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">id_token</code></td>
+      <td>JWT firmado que contiene información acerca de la identidad del usuario.</td>
+    </tr>
+  </tbody>
+</table>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <script src="/mi-argentina/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/mi-argentina/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="/mi-argentina/node_modules/prismjs/prism.js"></script> -->
+
+  </body>
+</html>

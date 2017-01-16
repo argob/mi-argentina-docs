@@ -1,0 +1,27 @@
+- title: Introducción
+  url: /
+  highlighted: true
+
+- title: Integración con Mi Argentina
+  url: /doc/integracion.html
+
+- title: Plataformas
+  url: /doc/plataformas.html
+
+# - title: Seguridad
+#   url: /doc/seguridad.html
+
+- hr: true
+
+- title: Inicio de Sesión
+  url: /doc/iniciar-sesion.html
+
+- title: Permisos
+  url: /doc/permisos.html
+
+- title: Tokens de Acceso
+  url: /doc/token.html
+
+# - title: - Pruebas
+#   url: /doc/testing-your-login-flow.html
+

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<!--
+                             MMMMMM    MMMMMM
+                        MMMMMMMMMMMMMMMMMMMMMMMM
+                    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                MM  MM      MM..        MM..      MM  MM
+                MM  MM      MMMM        MMMM      MM  MM
+                MM  MM                            MM  MM
+                MM  MM    MMMMMMMMMMMMMMMMMMMM    MM  MM
+              MMMM  MM    MM                MM    MM  MMMM
+              MM      MMMM    MMMMMMMMMMMM    MMMM      MM
+              MM    MM  MM  MM            MM  MM  MM    MM
+              MM    MM  MMMM                MMMM  MM    MM
+              MMMM  MM    MM                MM    MM  MMMM
+                    MM                            MM
+                    MMMMMM                    MMMMMM
+                  MMMMMMMM      MMMMMMMM      MMMMMMMM
+                MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+              MMMMMMMMMMMMMMMMMMMM    MMMMMMMMMMMMMMMMMMMM
+            MMMMMMMMMMMMMMMMMMMMMM    MMMMMMMMMMMMMMMMMMMMMM
+          MMMMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMMMMM
+      MMMMMMMMMMMMMMMMMMMM        MMMM        MMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMM        MMMM        MMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMM        MMMMMMMMMMMM        MMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMM    MMMMMMMM    MMMMMMMM    MMMMMMMMMMMMMMMM  MM
+    MM  MMMMMMMMMMMMMM    MMMMMMMM    MMMMMMMM    MMMMMMMMMMMMMMMMMMMM
+  MM    MMMMMMMMMMMMMM        MMMMMMMMMMMM        MMMMMMMMMMMM  MM    MM
+  MMMMMMMM  MMMMMMMMMMMMMM        MMMM        MMMMMMMMMMMMMM    MM    MM
+MM    MM      MMMMMMMMMMMM        MMMM        MMMMMMMMMMMM      MM    MM
+MM    MM        MMMMMMMMMMMMMM            MMMMMMMMMMMMMM          MMMM
+MM    MM        MMMMMMMMMMMMMM            MMMMMMMMMMMMMM
+  MMMM          MM  MMMMMMMMMMMMMM    MMMMMMMMMMMMMM  MM
+              MM      MMMMMMMMMMMM    MMMMMMMMMMMM      MM
+              MM        MMMMMMMMMMMMMMMMMMMMMMMM        MM
+              MMMM        MMMMMMMMMMMMMMMMMMMM        MMMM
+                MMMMMMMM  MMMMMMMMMMMMMMMMMMMM  MMMMMMMM
+              MMMM    MMMM    MMMMMMMMMMMM    MMMM    MMMM
+              MMMM    MMMM      MMMMMMMM      MMMM    MMMM
+            MMMM      MMMM        MMMM        MMMM      MMMM
+            MM    MMMMMM                        MMMMMM    MM
+            MMMMMMMMMMMM                        MMMMMMMMMMMM
+
+
+Poncho te saluda, amigo del código!
+Si te interesa lo que hacemos, mandanos un email a nrougier@modernizacion.gob.ar =D
+-->
+
+  <html lang="es">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Integración con Mi Argentina</title>
+  <meta name="description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina.">
+  <meta name="author" content="Presidencia de la Nación">
+  <link rel="shortcut icon" href="/mi-argentina/favicon.ico">
+
+  <!-- Nav and address bar color -->
+  <meta name="theme-color" content="#0072b8">
+  <meta name="msapplication-navbutton-color" content="#0072b8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0072b8">
+
+  <meta property="og:url" content="/mi-argentina/doc/integracion.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Integración con Mi Argentina" />
+  <meta property="og:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta property="og:image" content="/ejemplos/img/jumbotron.jpg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Integración con Mi Argentina" />
+  <meta name="twitter:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta name="twitter:image" content="/ejemplos/img/jumbotron.jpg" />
+
+  <link href="/mi-argentina/node_modules/argob-poncho/dist/css/roboto-fontface.css" rel="stylesheet">
+  <!-- <link href="/mi-argentina/node_modules/argob-poncho/dist/css/droid-serif.css" rel="stylesheet"> -->
+  <link href="/mi-argentina/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="/mi-argentina/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="/mi-argentina/node_modules/argob-poncho/dist/css/poncho.css" rel="stylesheet">
+  <link href="/mi-argentina/css/docs.css" rel="stylesheet">
+  <!-- <link href="/mi-argentina/css/prism.css" rel="stylesheet"> -->
+</head>
+
+  <body data-spy="scroll" data-target="#navbar-docs">
+
+    <header>
+  <nav class="navbar navbar-top navbar-default" role="navigation">
+    <div class="container">
+      <div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/mi-argentina/" class="navbar-brand">
+            <!-- <img alt="Poncho" src="/mi-argentina/img/poncho.gif" height="50"> -->
+            <h1>Mi Argentina</h1>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/mi-argentina">Mi Argentina</a></li>
+            <li><a href="/poncho">Poncho</a></li>
+            <li><a href="/iconos">Íconos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <main id="docs" role="main">
+      <section id="docs">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <aside class="page-sidebar">
+                <!-- <nav class="p-r-4">
+  <h3 class="m-t-0 text-gray">Contenidos</h3>
+  <ul class="nav nav-pills nav-stacked">
+    
+
+      
+
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/token.html">Token de Acceso</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/iniciar-sesion.html">Inicio de Sesión</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class="active"><a href="/mi-argentina/doc/integracion.html">Integración con Mi Argentina</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/permisos.html">Permisos</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/plataformas.html">Plataformas disponibles</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/pruebas.html">Probar un proceso de inicio de sesión</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/doc/seguridad.html">Seguridad del inicio de sesión</a></li>
+        
+      
+        
+
+          
+          
+
+          <li class=""><a href="/mi-argentina/">Introducción</a></li>
+        
+      
+
+    
+  </ul>
+</nav> -->
+
+
+<nav class="p-r-4">
+  <ul class="nav nav-pills nav-stacked">
+
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" btn-title">
+          <a href="/mi-argentina/">Introducción</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class="active ">
+          <a href="/mi-argentina/doc/integracion.html">Integración con Mi Argentina</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/plataformas.html">Plataformas</a>
+        </li>
+
+      
+    
+
+      
+
+        <hr>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/iniciar-sesion.html">Inicio de Sesión</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/permisos.html">Permisos</a>
+        </li>
+
+      
+    
+
+      
+
+        
+        
+
+        
+        
+
+        <li class=" ">
+          <a href="/mi-argentina/doc/token.html">Tokens de Acceso</a>
+        </li>
+
+      
+    
+
+  </ul>
+</nav>
+              </aside>
+            </div>
+            <div class="col-md-8 docs-container">
+              <h1 class="m-t-0">Integración con Mi Argentina</h1>
+              <hr class="m-t-0 m-b-3">
+
+              <p>Antes de que puedas integrar <em>Mi Argentina</em> en tu sistema, tenés que solicitar las credenciales OAuth 2.0 (<em>ID de cliente</em> y <em>clave secreta</em>) para autenticar usuarios y obtener acceso a nuestras APIs.</p>
+
+<p>Para solicitar las credenciales tenes que seguir estos pasos:</p>
+
+<!-- 1. [Solicitar las credenciales.](platforms.md#1-solicitar-las-credenciales)
+2. [Generar URI de redirección.](platforms.md#generar-uri-de-redireccion)
+3. [Integrar Inicio de sesión Mi Argentina.](platforms.md#integrar-inicio-de-sesión-mi-argentina) -->
+
+<!-- --- -->
+
+<ol>
+  <li>
+    <p><strong>Generar URI de redirección</strong></p>
+
+    <p>La URI de redirección determina dónde Mi Argentina envía las respuestas a tu petición de autorización. Éstas dan la seguridad que siempre los Token de Acceso volverán a tu sitio y no a otro.</p>
+
+    <p>Con esta URI de redirección podrás solicitar las credenciales correspondientes.</p>
+  </li>
+  <li>
+    <p><strong>Solicitar las credenciales</strong></p>
+
+    <p>La solicitud de credenciales (<code class="highlighter-rouge">ID de cliente</code> y <code class="highlighter-rouge">clave secreta</code>) se hace a través de GDE o por escrito siguiendo <a href="https://drive.google.com/open?id=0BzKnDjfoMfSfRzZEeENvOW9vU1E">este formato</a>.</p>
+  </li>
+  <li>
+    <p><strong>Integrar Inicio de sesión Mi Argentina</strong></p>
+
+    <p>Existen muchas bibliotecas para <a href="plataformas.html">distintas plataformas</a> (web y móvil) para poder integrar <em>Mi Argentina</em>.</p>
+  </li>
+</ol>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <script src="/mi-argentina/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/mi-argentina/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="/mi-argentina/node_modules/prismjs/prism.js"></script> -->
+
+  </body>
+</html>
