@@ -7,13 +7,13 @@
 
 # Site settings
 lang: es
-title: "Poncho"
-description: "Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina."
+title: "Mi Argentina"
+description: "Documentación de integración del inicio de sesión de Mi Argentina para las distintas plataformas de la APN."
 
 baseurl: "/mi-argentina" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
-source: src
+# source: src
 # destination: dist
 
 # Build settings
