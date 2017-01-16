@@ -21,3 +21,6 @@ markdown: kramdown
 
 sass:
     sass_dir: _sass
+
+# Para evitar que GHP ignore node_modules
+exclude: []
