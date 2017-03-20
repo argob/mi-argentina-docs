@@ -61,13 +61,25 @@ La configuración del módulo es muy sencilla:
 1. PHP 5.2 o superior
 2. CURL extension
 3. JSON extension
+4. [Composer](https://getcomposer.org/)
+
+### Instalación
+
+Ejecutar `php composer.phar install` para instalar las dependencias del archivo `composer.json`
+
+```
+$ php composer.phar install
+```
 
 #### Ejemplo: Cliente básico
 
 ```php
-$oidc = new OpenIDConnectClient('https://id.argentina.gob.ar/', 'ClientID', 'ClientSecret');
+$oidc = new OpenIDConnectClient('https://id.argentina.gob.ar', 'ClientID', 'ClientSecret');
+$oidc->addScope('openid profile optional');
 $oidc->authenticate();
 $name = $oidc->requestUserInfo('given_name');
+
+echo $name;
 ```
 
 [Descargar cliente OpenID Connect para PHP](https://github.com/jumbojett/OpenID-Connect-PHP)
