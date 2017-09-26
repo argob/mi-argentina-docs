@@ -19,9 +19,9 @@ https://id.argentina.gob.ar/authorize/
 
 A continuación se listarán los permisos válidos y la información del usuario que se obtiene por cada uno.
 
-### Profile
+### Scope: `profile`
 
-| Scope | Descripción |
+| Campo | Descripción |
 | - | - |
 | `name` | Nombre y apellido |
 | `given_name` | Nombre |
@@ -31,17 +31,17 @@ A continuación se listarán los permisos válidos y la información del usuario
 {: class="table"}
 
 
-### Email
+### Scope: `email`
 
-| Scope | Descripción |
+| Campo | Descripción |
 | - | - |
 | `email` | Correo electrónico |
 {: class="table"}
 
 
-### Optional
+### Scope: `optional`
 
-| Scope | Descripción |
+| Campo | Descripción |
 | - | - |
 | `dni_type` | Tipo de documento |
 | `dni_number` | Número de documento |
