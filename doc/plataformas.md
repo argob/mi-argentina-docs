@@ -56,20 +56,9 @@ Este módulo proporciona una implementación cliente para el protocolo OpenID Co
 
 La configuración del módulo es muy sencilla:
 
-#### Requsitos
+#### Requsitos e instalación
 
-1. PHP 5.2 o superior
-2. CURL extension
-3. JSON extension
-4. [Composer](https://getcomposer.org/)
-
-### Instalación
-
-Ejecutar `php composer.phar install` para instalar las dependencias del archivo `composer.json`
-
-```
-$ php composer.phar install
-```
+[Ver documentación oficial](https://github.com/jumbojett/OpenID-Connect-PHP)
 
 #### Ejemplo: Cliente básico
 
