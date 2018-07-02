@@ -55,4 +55,7 @@ A continuación se listarán los permisos válidos y la información del usuario
 | `appartment_floor` | Piso de departamento |
 | `phone_number` | Teléfono móvil |
 | `email_verified` | Correo electrónico verificado (`true`/`false`) |
+| `vehicles` | Vehículos |
+| `dependants` | Personas a cargo |
+| `verify_options` | Tipo de validación |
 {: class="table"}
