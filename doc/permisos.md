@@ -55,5 +55,4 @@ A continuación se listarán los permisos válidos y la información del usuario
 | `appartment_floor` | Piso de departamento |
 | `phone_number` | Teléfono móvil |
 | `email_verified` | Correo electrónico verificado (`true`/`false`) |
-| `level` | Nivel de validación del usuario (`0`, `1`, `2`) |
 {: class="table"}
