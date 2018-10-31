@@ -3,32 +3,36 @@ layout: docs
 title: Introducción
 ---
 
-El inicio de sesión con **Mi Argentina** es un modo rápido y cómodo de crear cuentas e iniciar sesión en tu aplicación en varias plataformas.
+El sistema de autenticación de **Mi Argentina** es un modo **rápido, simple y seguro** de crear cuentas e iniciar sesión en tu aplicación en varias plataformas.
 {: class="lead"}
 
-La idea es mejorar la experiencia del ciudadano en su contacto con la Administración Pública Nacional (APN) permitiendo acceder desde una misma Identidad Digital a una amplia gama de servicios digitales.
+El objetivo es mejorar la experiencia del ciudadano en su contacto con la Administración Pública Nacional (APN) permitiendo acceder desde una misma Identidad Digital a una amplia gama de servicios digitales.
 
-![Inicio de sesión con ID](./img/id_login.png)
-
----
-
-## Funciones
-
-1. **Validación de identidad**
-
-    Tener una cuenta en Mi Argentina da la posibilidad de validar la identidad de una persona física permitiéndole al usuario realizar distintos tipos de transacciones y consultas.
-
-2. **Inicio de sesión entre plataformas**
-	
-    El inicio de sesión con Mi Argentina está disponible en la mayoría de las plataformas de aplicaciones para móviles y web. Tras crear una cuenta con Mi Argentina en una plataforma, una persona puede iniciar sesión de forma rápida y sencilla.
-
-3. **Permisos detallados**
-
-    El inicio de sesión con Mi Argentina admite varios permisos que determinan qué información comparten las personas con tu aplicación. Esto significa que tienes un control preciso de lo que solicitas, y las personas tienen un control exacto de lo que deciden aprobar.
+![Autenticación con Mi Argentina](./img/id_login.png)
 
 ---
 
-## Información útil
+## Beneficios
+
+### Validación de identidad
+
+**Mi Argentina** brinda distintos niveles de validación permitiendo que una persona pueda tener una cuenta con identidad validada y acceder a servicios e información sensible.
+
+### Identidad Federada (SSO)
+
+   La autenticación con **Mi Argentina** permite a un usuario estar autenticado en todas las plataformas queu usan **Mi Argentina** como sistema de autenticación. Esto permite no tener que iniciar sesión nuevamente en cada plataforma.
+
+### Seguridad
+
+**Mi Argentina** brinda técnicas de protección contra distintos tipos de ataques y vulnerabilidades:
+- Protección contra ataques de Cross Site Scripting (XSS)
+- Protección de datos sensibles (HTTPS)
+- Protección contra redirecciones y reenvíos no validados
+- Protección contra Cross Site Request Forgery (CSRF)
+
+---
+
+## Desarrolladores
 Conocé más sobre el desarrollo en las distintas plataformas.
 
 1. [Aplicaciones web](doc/plataformas.html#aplicaciones-web)

@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Plataformas disponibles
+title: Plataformas
 ---
 
-El _Inicio de sesión Mi Argentina_ está disponible para distintas plataformas:
+La autenticación con **Mi Argentina** está disponible para distintas plataformas:
 
 1. [Aplicaciones web](#aplicaciones-web)
 2. [Android](#android)
@@ -77,7 +77,7 @@ echo $name;
 
 ## 2. Android
 
-El SDK para Android permite a las personas iniciar sesión en tu aplicación mediante el _Inicio de sesión Mi Argentina_. Al hacerlo, las personas conceden a la aplicación permiso para obtener información o realizar acciones en Mi Argentina en su nombre.
+El SDK para Android permite a las personas iniciar sesión en tu aplicación mediante la autenticación con **Mi Argentina**. Al hacerlo, las personas conceden a la aplicación permiso para obtener información o realizar acciones en **Mi Argentina** en su nombre.
 
 Recomendamos 2 clientes SDK:
 

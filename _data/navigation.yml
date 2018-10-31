@@ -5,15 +5,15 @@
 - title: Integración con Mi Argentina
   url: /doc/integracion.html
 
-- title: Plataformas
-  url: /doc/plataformas.html
-
 # - title: Seguridad
 #   url: /doc/seguridad.html
 
 - hr: true
 
-- title: Inicio de Sesión
+- title: Plataformas
+  url: /doc/plataformas.html
+
+- title: Autenticación
   url: /doc/iniciar-sesion.html
 
 - title: Permisos

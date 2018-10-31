@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Inicio de Sesión
+title: Autenticación
 ---
 
 Si la persona no inició sesión en **Mi Argentina**, se le pedirá que lo haga antes de pasar al inicio de sesión en la aplicación, si no está registrado podrá hacerlo y para luego continuar con el flujo.
