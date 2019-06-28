@@ -21,41 +21,47 @@ A continuación se listarán los permisos válidos y la información del usuario
 
 ### Scope: `profile`
 
-| Campo | Descripción |
-| - | - |
-| `name` | Nombre y apellido |
-| `given_name` | Nombre |
-| `family_name` | Apellido |
-| `gender` | Género |
-| `birthdate` | Fecha de nacimiento |
+| Campo | Descripción | Tipo de dato |
+| - | - | - |
+| `name` | Nombre y apellido | String |
+| `given_name` | Nombre | String |
+| `family_name` | Apellido | String |
+| `gender` | Género | String (`M` o `F`) |
+| `birthdate` | Fecha de nacimiento | Date |
 {: class="table"}
 
 
 ### Scope: `email`
 
-| Campo | Descripción |
-| - | - |
-| `email` | Correo electrónico |
+| Campo | Descripción | Tipo de dato |
+| - | - | - |
+| `email` | Correo electrónico | String |
 {: class="table"}
 
 
 ### Scope: `optional`
 
-| Campo | Descripción |
-| - | - |
-| `dni_type` | Tipo de documento |
-| `dni_number` | Número de documento |
-| `nationality` | Nacionalidad |
-| `country` | País |
-| `locality` | Localidad |
-| `street_name` | Domicilio |
-| `street_number` | Número de domicilio |
-| `postal_code` | Código postal |
-| `appartment_number` | Número de departamento |
-| `appartment_floor` | Piso de departamento |
-| `phone_number` | Teléfono móvil |
-| `email_verified` | Correo electrónico verificado (`true`/`false`) |
-| `vehicles` | Vehículos |
-| `dependants` | Personas a cargo |
-| `verify_options` | Tipo de validación |
+| Campo | Descripción | Tipo de dato |
+| - | - | - |
+| `dni_type`                 | Tipo de documento                                        | String |
+| `dni_number`               | Número de documento                                      | String |
+| `nationality`              | Nacionalidad                                             | String |
+| `country`                  | País                                                     | String |
+| `locality`                 | Localidad                                                | String |
+| `street_name`              | Domicilio                                                | String |
+| `street_number`            | Número de domicilio                                      | String |
+| `postal_code`              | Código postal                                            | String |
+| `appartment_number`        | Número de departamento                                   | String |
+| `appartment_floor`         | Piso de departamento                                     | String |
+| `phone_number`             | Teléfono móvil                                           | String |
+| `email_verified`           | Correo electrónico verificado (`true`/`false`)           | Boolean |
+| `level`                    | Nivel (`deprecado`)                                      | Integer |
+| `vehicles`                 | Vehículos                                                | Array |
+| `dependants`               | Personas a cargo                                         | Array |
+| `verify_options`           | Tipo de validación                                       | Array |
+| `cuil`                     | CUIL                                                     | String |
+| `validation_level`         | Nivel de validación obtenido                             | Integer |
+| `validation_date`          | Fecha de la validación obtenida                          | DateTime |
+| `validation_origin`        | Origen de la validación obtenida                         | String |
+| `do_dni_match_cuil`        | Verifica si el DNI coincide con el CUIL (`true`/`false`) | Boolean |
 {: class="table"}
