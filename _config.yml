@@ -8,7 +8,7 @@
 # Site settings
 lang: es
 title: "Mi Argentina"
-description: "Documentación de integración del inicio de sesión de Mi Argentina para las distintas plataformas de la APN."
+description: "Estándar de identidad digital simple, ágil y seguro."
 
 baseurl: "/mi-argentina" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
