@@ -22,8 +22,17 @@ https://id.argentina.gob.ar/authorize/
 
 Esta URL tiene los siguientes parámetros obligatorios:
 
-- `client_id`: el identificador de la aplicación.
-- `redirect_uri`: la URL a la que quieres redirigir a la persona que inicia sesión. Esta URL captura la respuesta dada en la pantalla de inicio de sesión.
+- `client_id`: REQUERIDO. Es el identificador de la aplicación.
+- `redirect_uri`: REQUERIDO. Es la URL a la que quieres redirigir a la persona que inicia sesión. Esta URL captura la respuesta dada en la pantalla de inicio de sesión.
+- `response_type`: REQUERIDO. Determina el flujo de procesamiento de autorización que se utilizará, incluidos los parámetros que se devuelven desde los puntos finales utilizados.
+| "response_type" value | Flow |
+| - | - |
+| code | Authorization Code Flow |
+| id_token | Implicit Flow |
+| id_token token | Implicit Flow |
+{: class="table"}
+- `scope`: REQUERIDO. Las solicitudes de OpenID Connect DEBEN contener el scope `openid` como valor. [Ver scopes disponibles](https://argob.github.io/mi-argentina/doc/permisos.html).
+
 
 ### Intercambiar código por un token de acceso
 
