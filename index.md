@@ -20,7 +20,7 @@ El objetivo es mejorar la experiencia del ciudadano en su contacto con la Admini
 
 ### Identidad Federada (SSO)
 
-   La autenticación con **Mi Argentina** permite a un usuario estar autenticado en todas las plataformas queu usan **Mi Argentina** como sistema de autenticación. Esto permite no tener que iniciar sesión nuevamente en cada plataforma.
+   La autenticación con **Mi Argentina** permite a un usuario estar autenticado en todas las plataformas que usan **Mi Argentina** como sistema de autenticación. Esto permite no tener que iniciar sesión nuevamente en cada plataforma.
 
 ### Seguridad
 
