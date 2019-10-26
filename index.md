@@ -16,9 +16,9 @@ El objetivo es mejorar la experiencia del ciudadano en su contacto con la Admini
 
 ### Validación de identidad
 
-**Mi Argentina** brinda distintos niveles de validación permitiendo que una persona pueda tener una cuenta con identidad validada y acceder a servicios e información sensible.
+**Mi Argentina** brinda distintos niveles de validación permitiendo que una persona pueda tener una cuenta con identidad validada y acceder a servicios y datos sensible.
 
-### Identidad Federada (SSO)
+### Single Sign On (SSO)
 
    La autenticación con **Mi Argentina** permite a un usuario estar autenticado en todas las plataformas que usan **Mi Argentina** como sistema de autenticación. Esto permite no tener que iniciar sesión nuevamente en cada plataforma.
 
