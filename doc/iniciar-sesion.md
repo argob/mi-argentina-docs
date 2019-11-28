@@ -33,7 +33,7 @@ Esta URL tiene los siguientes parámetros obligatorios:
 | id_token token | Implicit Flow |
 {: class="table"}
 
-- `scope`: REQUERIDO. Las solicitudes de OpenID Connect DEBEN contener el scope `openid` como valor. [Ver scopes disponibles](https://argob.github.io/mi-argentina/doc/permisos.html).
+- `scope`: REQUERIDO. Las solicitudes de OpenID Connect DEBEN contener el scope `openid` como valor. [Ver scopes disponibles](https://argob.github.io/mi-argentina-docs/doc/permisos.html).
 
 
 ### Intercambiar código por un token de acceso

@@ -10,7 +10,7 @@ lang: es
 title: "Mi Argentina"
 description: "Estándar de identidad digital simple, ágil y seguro."
 
-baseurl: "/mi-argentina" # the subpath of your site, e.g. /blog
+baseurl: "/mi-argentina-docs" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # source: src
