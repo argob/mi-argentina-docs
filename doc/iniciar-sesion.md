@@ -13,9 +13,10 @@ Esto se detecta automáticamente, de modo que no tienes que hacer nada para acti
 La aplicación debe iniciar el redireccionamiento a una URL que mostrará el cuadro de diálogo de inicio de sesión:
 
 ```
+GET
 https://id.argentina.gob.ar/authorize/
-    ?client_id={client-id}
-    &redirect_uri={redirect-uri}
+    ?client_id=651462
+    &redirect_uri=https://clienteopenid.com
     &response_type=code
     &scope=openid+profile+email+optional
 ```
@@ -43,21 +44,42 @@ Como este proceso de redireccionamiento envía al navegador a direcciones URL de
 Luego del primer paso, se recibe un parámetro `code` que hay que intercambiarlo por un token de acceso mediante un extremo. La llamada debe ser de servidor a servidor, ya que involucra la clave secreta de la aplicación (la clave secreta de la aplicación no debe aparecer nunca en el código del cliente).
 
 ```
-https://id.argentina.gob.ar/token/
-    ?client_id={client-id}
-    &client_secret={client-secret}
-    &redirect_uri={redirect-uri}
-    &code={code}
-    &grant_type=authorization_code
+https://id.argentina.gob.ar/?code=b9cedb346ee04f15ab1d3ac13da92002&state=123123
+```
+
+Usamos el parámetro `code` para obtener el `access_token` y el `refresh_token`:
+
+```
+curl -X POST \
+    -H "Cache-Control: no-cache" \
+    -H "Content-Type: application/x-www-form-urlencoded" \
+    "https://id.argentina.gob.ar/token/" \
+    -d "client_id=651462" \
+    -d "client_secret=37b1c4ff826f8d78bd45e25bad75a2c0" \
+    -d "code=b9cedb346ee04f15ab1d3ac13da92002" \
+    -d "redirect_uri=https://clienteopenid.com/" \
+    -d "grant_type=authorization_code"
 ```
 
 Esta URL tiene los siguientes parámetros obligatorios:
 
-- `code`: el parámetro recibido del redireccionamiento desde la pantalla de inicio de sesión.
-- `client_secret`: la clave secreta exclusiva de tu aplicación. Es extremadamente importante que permanezca en secreto, es el núcleo de la seguridad de la aplicación y de todas las personas que la usan.
+- `client_id`: REQUERIDO. Se vuelve a enviar el CLIENT_ID
+- `client_secret`: REQUERIDO. La clave secreta exclusiva de tu aplicación. Es extremadamente importante que permanezca en secreto, es el núcleo de la seguridad de la aplicación y de todas las personas que la usan
+- `redirect_uri`: REQUERIDO. Se vuelve a enviar la REDIRECT_URI
+- `code`: REQUERIDO. El parámetro recibido del redireccionamiento desde la pantalla de inicio de sesión
 
 
 Una respuesta válida a esta petición contiene los siguientes campos en un objeto JSON:
+
+```
+{
+    "access_token": "82b35f3d810f4cf49dd7a52d4b22a594",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "refresh_token": "0bac2d80d75d46658b0b31d3778039bb",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6..."
+}
+```
 
 | Campo | Descripción |
 | - | - |
@@ -67,3 +89,26 @@ Una respuesta válida a esta petición contiene los siguientes campos en un obje
 | `refresh_token` | Hash que se utiliza para obtener otro access_token cuando se vence. |
 | `id_token` | JWT firmado que contiene información acerca de la identidad del usuario. |
 {: class="table"}
+
+Por último, solicitar la información del usuario mediante el endpoint `/userinfo`:
+
+https://id.argentina.gob.ar/userinfo/?access_token=82b35f3d810f4cf49dd7a52d4b22a594
+
+### Expiración y Refresh Tokens
+
+Si se recibe el código de error `401 Unauthorized` en el uso del access token, es probable que el access token haya expirado.
+
+El cliente OpenID (RP) puede pedir un nuevo access token usando el refresh token. Se tiene que enviar una petición **POST** al endpoint `/token` con los siguientes parámetros:
+
+The RP application can request a new access token by using the refresh token. Send a POST request to the /token endpoint with the following request parameters:
+
+```
+curl -X POST \
+    -H "Cache-Control: no-cache" \
+    -H "Content-Type: application/x-www-form-urlencoded" \
+    "https://id.argentina.gob.ar/token/" \
+    -d "client_id=651462" \
+    -d "client_secret=37b1c4ff826f8d78bd45e25bad75a2c0" \
+    -d "grant_type=refresh_token" \
+    -d "refresh_token=0bac2d80d75d46658b0b31d3778039bb"
+```
