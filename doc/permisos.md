@@ -55,13 +55,10 @@ A continuación se listarán los permisos válidos y la información del usuario
 | `appartment_floor`         | Piso de departamento                                     | String |
 | `phone_number`             | Teléfono móvil                                           | String |
 | `email_verified`           | Correo electrónico verificado (`true`/`false`)           | Boolean |
-| `level`                    | Nivel (`deprecado`)                                      | Integer |
-| `vehicles`                 | Vehículos                                                | Array |
-| `dependants`               | Personas a cargo                                         | Array |
-| `verify_options`           | Tipo de validación                                       | Array |
 | `cuil`                     | CUIL                                                     | String |
 | `validation_level`         | Nivel de validación obtenido                             | Integer |
 | `validation_date`          | Fecha de la validación obtenida                          | DateTime |
 | `validation_origin`        | Origen de la validación obtenida                         | String |
 | `do_dni_match_cuil`        | Verifica si el DNI coincide con el CUIL (`true`/`false`) | Boolean |
+| `terms_and_conditions`     | Términos y Condiciones                                   | Array |
 {: class="table"}
