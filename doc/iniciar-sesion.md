@@ -10,10 +10,9 @@ Esto se detecta automáticamente, de modo que no tienes que hacer nada para acti
 
 ### Invocar la pantalla de inicio de sesión y configurar la URL de redireccionamiento
 
-La aplicación debe iniciar el redireccionamiento a una URL que mostrará el cuadro de diálogo de inicio de sesión:
+La aplicación debe iniciar el redireccionamiento a una URL que mostrará el inicio de sesión:
 
 ```
-GET
 https://id.argentina.gob.ar/authorize/
     ?client_id=651462
     &redirect_uri=https://clienteopenid.com
@@ -90,9 +89,14 @@ Una respuesta válida a esta petición contiene los siguientes campos en un obje
 | `id_token` | JWT firmado que contiene información acerca de la identidad del usuario. |
 {: class="table"}
 
-Por último, solicitar la información del usuario mediante el endpoint `/userinfo`:
 
-https://id.argentina.gob.ar/userinfo/?access_token=82b35f3d810f4cf49dd7a52d4b22a594
+### Solicitar la información del usuario con UserInfo:
+
+```
+curl -X POST \
+    -H "Authorization: Bearer 82b35f3d810f4cf49dd7a52d4b22a594"
+    "https://id.argentina.gob.ar/userinfo/"
+```
 
 ### Expiración y Refresh Tokens
 
