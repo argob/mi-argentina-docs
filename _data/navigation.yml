@@ -22,6 +22,9 @@
 - title: Tokens de Acceso
   url: /doc/token.html
 
+- title: Tokens de Acceso
+  url: /doc/manejo-de-sesiones.html
+
 # - title: - Pruebas
 #   url: /doc/testing-your-login-flow.html
 
