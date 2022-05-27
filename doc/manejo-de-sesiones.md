@@ -11,7 +11,7 @@ Parámetros que se pasan como parámetros de consulta en la solicitud de cierre 
 
 * `id_token_hint`: El token de identificación emitido anteriormente se pasa al endpoint de cierre de sesión como una pista sobre la sesión autenticada actual del usuario final con el cliente.
 
-* `post_logout_redirect_uri`: URL a la que el RP solicita que se redirija el agente de usuario del usuario final después de realizar un cierre de sesión.
+* `post_logout_redirect_uri`: URL a la que el RP solicita que se redirija al usuario final después de realizar un cierre de sesión.
 
 * `state`: **OPCIONAL**. Valor opaco utilizado por el RP para mantener el estado entre la solicitud de cierre de sesión y la devolución de llamada al endpoint especificado por el parámetro de consulta `post_logout_redirect_uri`.
 
