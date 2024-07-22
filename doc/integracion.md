@@ -22,7 +22,7 @@ Para solicitar las credenciales tenes que seguir estos pasos:
 
 2. **Solicitar las credenciales**
 
-    La solicitud de credenciales (`ID de cliente` y `clave secreta`) se hace a través de GDE o por escrito siguiendo [este formato](https://drive.google.com/open?id=1oMVINkNqgFjO8qMUMKm69FfN8EuuSkBR).
+    La solicitud de credenciales (`ID de cliente` y `clave secreta`) se hace a través de GDE o por escrito siguiendo [este formato](https://docs.google.com/document/d/16-gB7qdzQXKlpDHoBQY0GNsK0DhAsn7NICV3zj3LUhI).
 
 
 3. **Integrar Inicio de sesión Mi Argentina**
