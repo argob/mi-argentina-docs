@@ -45,9 +45,11 @@ A continuación se listarán los permisos válidos y la información del usuario
 | - | - | - |
 | `dni_type`                 | Tipo de documento                                        | String |
 | `dni_number`               | Número de documento                                      | String |
-| `nationality`              | Nacionalidad                                             | String |
-| `country`                  | País                                                     | String |
-| `locality`                 | Localidad                                                | String |
+| `nationality`              | Nacionalidad                                             | Json   |
+| `country`                  | País                                                     | Json   |
+| `province`                 | Provincia                                                | Json   |
+| `district`                 | Departamento o Municipalidad                             | Json   |
+| `locality`                 | Localidad                                                | Json   |
 | `street_name`              | Domicilio                                                | String |
 | `street_number`            | Número de domicilio                                      | String |
 | `postal_code`              | Código postal                                            | String |
